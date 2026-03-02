@@ -49,11 +49,13 @@ document.addEventListener('DOMContentLoaded', () => {
             iconOpen.classList.add('hidden');
             iconClose.classList.remove('hidden');
             document.body.style.overflow = 'hidden'; // Empêche le scroll quand le menu est ouvert
+            document.documentElement.style.overflow = 'hidden';
         } else {
             mobileMenu.classList.add('translate-x-full');
             iconOpen.classList.remove('hidden');
             iconClose.classList.add('hidden');
             document.body.style.overflow = '';
+            document.documentElement.style.overflow = '';
         }
     }
 
